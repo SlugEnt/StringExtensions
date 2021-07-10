@@ -5,7 +5,7 @@
 
     <IsPackable>false</IsPackable>
 
-    <AssemblyVersion>1.0.0.12</AssemblyVersion>
+    <AssemblyVersion>1.0.0.13</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\StringExtensions\StringExtensions.csproj" />
+    <ProjectReference Include="..\..\Src\StringExtensions\StringExtensions.csproj" />
   </ItemGroup>
 
 </Project>
