@@ -95,8 +95,24 @@ namespace Test_StringExtensions
 			Assert.IsFalse(StringExtension.SpanSearcherContains(a, string.Empty));
 		}
 
+		[TestCase(3000, 30, "A10:")]
+		[TestCase(3, 3000, "A20:")]
+		[Test]
+		public void Handles_OutOfBoundsGracefully (int start, int end, string prefixErr) {
+			Assert.IsFalse(StringExtension.SpanSearcherContains(a,"someXYZ",start,end));
+		}
 
+		[TestCase(-1, 30, "A10:")]
+		[Test]
+		public void Handles_OutOfBoundsByThrowing(int start, int end, string prefixErr)
+		{
+			Assert.Throws<ArgumentException>(() => StringExtension.SpanSearcherContains(a, "someXYZ", start, end),prefixErr);
+		}
 
-
+		[TestCase(0,-1,"We","A10:")]
+		[Test]
+		public void Handles_Negative1_For_EndAT(int start, int end, string searchFor,string prefixErr) {
+			Assert.IsTrue(StringExtension.SpanSearcherContains(a, searchFor, start, end),prefixErr);
+		}
 	}
 }

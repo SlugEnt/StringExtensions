@@ -1,8 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-    <AssemblyVersion>1.0.0.7</AssemblyVersion>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyVersion>1.0.0.12</AssemblyVersion>
+    <PackageId>SlugEnt.StringExtensions</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>Scott Herrmann</Authors>
+    <Company>SlugEnt</Company>
+    <Description>Provides enhancements to standard string class functionality</Description>
+    <Copyright>Scott Herrmann 2021</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/SlugEnt/StringExtensions</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/SlugEnt/StringExtensions</PackageProjectUrl>
+    <RepositoryType>Git</RepositoryType>
   </PropertyGroup>
 
 </Project>
