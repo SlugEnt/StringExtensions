@@ -2,8 +2,19 @@
 
 namespace StringExtensions
 {
+	/// <summary>
+	/// A set of string extensions.
+	/// </summary>
 	public static class StringExtension
 	{
+		/// <summary>
+		/// Performs the fastest possible string searches, especially on larger strings for a given string
+		/// </summary>
+		/// <param name="stringToSearch">The string to be searched</param>
+		/// <param name="searchFor">The string you are looking for</param>
+		/// <param name="startAt">The position in the string to be searched to start searching.  Allows you to skip a certain number of characters</param>
+		/// <param name="endAt">The position in string to stop searching at.</param>
+		/// <returns></returns>
 		public static bool SpanSearcherContains(ReadOnlySpan<char> stringToSearch, string searchFor, int startAt = 0, int endAt = -1)
 		{
 			// Test for empty / null
