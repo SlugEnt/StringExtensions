@@ -1,5 +1,5 @@
 {
-  "ConfigStructureVersion": "0.28.0",
+  "ConfigStructureVersion": "0.32.0",
   "UseCodeCoverage": true,
   "CodeCoverageThreshold": 90,
   "DeployProdRoot": null,
