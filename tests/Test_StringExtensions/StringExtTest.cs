@@ -114,5 +114,5 @@ namespace Test_StringExtensions
 		public void Handles_Negative1_For_EndAT(int start, int end, string searchFor,string prefixErr) {
 			Assert.IsTrue(StringExtension.SpanSearcherContains(a, searchFor, start, end),prefixErr);
 		}
-	}
+    }
 }
